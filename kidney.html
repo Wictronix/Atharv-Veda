@@ -1,507 +1,1112 @@
 <!DOCTYPE html>
-
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="zxx">
-  <!-- Begin Head -->
 
-  <head>
-    <title>Atharv Veda</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Free Web tutorials" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <meta name="author" content="John Doe" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font-family  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- custom css link -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/select2.min.css" />
-    <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-  </head>
+<head>
+  <title>Atharv Veda</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Free Web tutorials" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="John Doe" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font-family  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css link -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/select2.min.css" />
+  <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+</head>
 
-  <body>
-    <!------------- Loader start ----------->
-    <div class="ayur-loader">
-      <div class="ayur-spin">
-        <img src="assets/images/loader.gif" alt="loader" />
-      </div>
+<body>
+  <!------------- Loader start ----------->
+  <div class="ayur-loader">
+    <div class="ayur-spin">
+      <img src="assets/images/loader.gif" alt="loader" />
     </div>
-    <!------------- Loader End ----------->
-    <!------------- Header Section start ----------->
-    <div class="ayur-menu-wrapper">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-2 col-md-4 col-sm-5 col-6">
-            <div class="ayur-menu-logo">
-              <a href="index.html"><img src="assets/images/New-Logo.png" /></a>
-            </div>
-          </div>
-          <div class="col-lg-10 col-md-8 col-sm-7 col-6">
-            <div class="ayur-navmenu-wrapper">
-              <div class="ayur-nav-menu">
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="shop.html">Shop</a></li>
-                  <li class="ayur-has-menu">
-                    <a href="javascript:void(0)"
-                      >Health Concerns
-                      <svg
-                        version="1.1"
-                        x="0"
-                        y="0"
-                        viewBox="0 0 491.996 491.996"
-                        style="enable-background: new 0 0 512 512"
-                      >
-                        <g>
-                          <path
-                            d="m484.132 124.986-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86-7.208 0-13.964 2.792-19.036 7.86l-183.84 183.848L62.056 108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968 2.788-19.036 7.856l-16.12 16.128c-10.496 10.488-10.496 27.572 0 38.06l219.136 219.924c5.064 5.064 11.812 8.632 19.084 8.632h.084c7.212 0 13.96-3.572 19.024-8.632l218.932-219.328c5.072-5.064 7.856-12.016 7.864-19.224 0-7.212-2.792-14.068-7.864-19.128z"
-                            opacity="1"
-                          ></path>
-                        </g>
-                      </svg>
-                    </a>
-                    <ul class="ayur-submenu">
-                      <li><a href="./kidney.html">Kidney</a></li>
-                      <li><a href="./digestive.html">Digestive</a></li>
-                      <li><a href="./neurological.html">Neurological</a></li>
-                      <li><a href="./metabolic.html">Metabolic</a></li>
-                      <li>
-                        <a href="./musculoskeletal.html">Musculoskeletal</a>
-                      </li>
-                      <li><a href="./autoimmune.html">Autoimmune</a></li>
-                      <li><a href="./mental.html">Mental</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li class="ayur-has-menu">
-                    <a href="javascript:void(0)"
-                      >Pages
-                      <svg
-                        version="1.1"
-                        x="0"
-                        y="0"
-                        viewBox="0 0 491.996 491.996"
-                        style="enable-background: new 0 0 512 512"
-                      >
-                        <g>
-                          <path
-                            d="m484.132 124.986-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86-7.208 0-13.964 2.792-19.036 7.86l-183.84 183.848L62.056 108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968 2.788-19.036 7.856l-16.12 16.128c-10.496 10.488-10.496 27.572 0 38.06l219.136 219.924c5.064 5.064 11.812 8.632 19.084 8.632h.084c7.212 0 13.96-3.572 19.024-8.632l218.932-219.328c5.072-5.064 7.856-12.016 7.864-19.224 0-7.212-2.792-14.068-7.864-19.128z"
-                            opacity="1"
-                          ></path>
-                        </g>
-                      </svg>
-                    </a>
-                    <ul class="ayur-submenu">
-                      <li><a href="blog-single.html">Blog Single</a></li>
-                      <li><a href="shop-single.html">Shop Single</a></li>
-                      <li><a href="cart.html">Cart</a></li>
-                      <li><a href="checkout.html">Checkout</a></li>
-                      <li><a href="profile.html">Profile</a></li>
-                    </ul>
-                  </li>
-                  <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-              <div class="ayur-nav-icons">
-                <div class="ayur-nav-like">
-                  <a href="wishlist.html">
-                    <span class="icon">
-                      <svg
-                        width="21"
-                        height="17"
-                        viewBox="0 0 21 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M14.6647 0C12.9947 0 11.5308 0.744645 10.4311 2.15348C10.2912 2.33306 10.16 2.51925 10.0379 2.7114C9.91579 2.51925 9.78456 2.33306 9.64463 2.15348C8.54497 0.744645 7.08101 0 5.41104 0C2.25633 0 0 2.64149 0 5.81114C0 9.43548 2.97046 12.8513 9.63153 16.8865C9.75642 16.9622 9.89715 17 10.0379 17C10.1786 17 10.3193 16.9622 10.4442 16.8866C17.1053 12.8513 20.0757 9.43552 20.0757 5.81118C20.0757 2.64318 17.8213 0 14.6647 0ZM16.4353 10.3241C15.0486 11.8714 12.953 13.5007 10.0379 15.2969C7.12277 13.5007 5.02717 11.8714 3.64041 10.3241C2.24617 8.7684 1.56842 7.2922 1.56842 5.81118C1.56842 3.52898 3.11072 1.56842 5.41104 1.56842C6.58249 1.56842 7.58134 2.07776 8.37986 3.08233C9.01836 3.88572 9.28738 4.71529 9.28927 4.72121C9.33905 4.88083 9.43853 5.02035 9.57321 5.11943C9.7079 5.2185 9.87072 5.27194 10.0379 5.27194C10.2051 5.27194 10.3679 5.2185 10.5026 5.11943C10.6373 5.02035 10.7368 4.88083 10.7866 4.72121C10.789 4.71329 11.05 3.90959 11.6675 3.11848C12.4703 2.08992 13.4787 1.56838 14.6647 1.56838C16.9675 1.56838 18.5073 3.53082 18.5073 5.81114C18.5073 7.29216 17.8296 8.76836 16.4353 10.3241Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="ayur-nav-product">
-                  <a href="cart.html">
-                    <span class="icon">
-                      <svg
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M3.91343 4.14634H2.81175C2.44474 4.14636 2.09137 4.28542 1.82279 4.53554C1.55421 4.78565 1.39037 5.12824 1.36426 5.49432L0.65358 15.4455C0.639403 15.6443 0.666313 15.8439 0.732633 16.0318C0.798954 16.2197 0.903263 16.3919 1.03906 16.5378C1.17486 16.6836 1.33924 16.7999 1.52195 16.8794C1.70466 16.9589 1.9018 17 2.10107 17H13.5881C13.7873 16.9999 13.9844 16.9587 14.1671 16.8792C14.3497 16.7996 14.514 16.6833 14.6498 16.5375C14.7856 16.3917 14.8899 16.2195 14.9563 16.0316C15.0226 15.8438 15.0496 15.6443 15.0356 15.4455L14.3249 5.49432C14.2988 5.12824 14.1349 4.78565 13.8664 4.53554C13.5978 4.28542 13.2444 4.14636 12.8774 4.14634H11.7836V3.93902C11.7836 2.89433 11.3686 1.89242 10.6299 1.15371C9.89118 0.415003 8.88927 0 7.84458 0C5.7486 0 3.81143 1.66932 3.90556 3.93902L3.91343 4.14634ZM11.7836 5.39024V8.5C11.7836 8.66495 11.7181 8.82315 11.6014 8.93979C11.4848 9.05642 11.3266 9.12195 11.1617 9.12195C10.9967 9.12195 10.8385 9.05642 10.7219 8.93979C10.6052 8.82315 10.5397 8.66495 10.5397 8.5V5.39024H5.14946V8.5C5.14946 8.66495 5.08393 8.82315 4.96729 8.93979C4.85065 9.05642 4.69246 9.12195 4.52751 9.12195C4.36255 9.12195 4.20436 9.05642 4.08772 8.93979C3.97108 8.82315 3.90556 8.66495 3.90556 8.5C3.90556 8.5 3.95946 7.04671 3.94163 5.39024H2.81175C2.7594 5.39032 2.70902 5.41019 2.67072 5.44588C2.63241 5.48156 2.60903 5.53042 2.60526 5.58263L1.89417 15.5339C1.89211 15.5623 1.89594 15.5908 1.90541 15.6177C1.91488 15.6446 1.92979 15.6692 1.94921 15.69C1.96862 15.7109 1.99213 15.7275 2.01825 15.7389C2.04438 15.7503 2.07257 15.7561 2.10107 15.7561H13.5881C13.6165 15.756 13.6447 15.7501 13.6708 15.7386C13.6968 15.7272 13.7203 15.7106 13.7397 15.6898C13.7591 15.669 13.774 15.6444 13.7835 15.6176C13.793 15.5907 13.7969 15.5622 13.795 15.5339L13.0839 5.58263C13.0801 5.53042 13.0567 5.48156 13.0184 5.44588C12.9801 5.41019 12.9298 5.39032 12.8774 5.39024H11.7836ZM10.5397 4.14634V3.93902C10.5397 3.22423 10.2558 2.53872 9.75032 2.03329C9.24489 1.52785 8.55937 1.2439 7.84458 1.2439C7.12979 1.2439 6.44427 1.52785 5.93884 2.03329C5.43341 2.53872 5.14946 3.22423 5.14946 3.93902V4.14634H10.5397Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </span>
-                    <span class="ayur-nav-provalue">2</span>
-                  </a>
-                </div>
-                <div class="ayur-nav-user">
-                  <a href="profile.html">
-                    <span class="icon">
-                      <svg
-                        width="15"
-                        height="17"
-                        viewBox="0 0 15 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M7.66405 0C10.1737 0 12.2106 2.03684 12.2106 4.54651C12.2106 7.05619 10.1737 9.09302 7.66405 9.09302C5.15438 9.09302 3.11754 7.05619 3.11754 4.54651C3.11754 2.03684 5.15438 0 7.66405 0ZM7.66405 1.18605C5.80907 1.18605 4.30359 2.69153 4.30359 4.54651C4.30359 6.40149 5.80907 7.90698 7.66405 7.90698C9.51903 7.90698 11.0245 6.40149 11.0245 4.54651C11.0245 2.69153 9.51903 1.18605 7.66405 1.18605ZM14.978 15.6163C14.978 15.9833 14.8322 16.3352 14.5727 16.5947C14.3132 16.8542 13.9613 17 13.5943 17H1.73382C1.36683 17 1.01488 16.8542 0.75538 16.5947C0.495882 16.3352 0.350098 15.9833 0.350098 15.6163C0.350098 13.9911 0.995714 12.4324 2.14492 11.2832C3.29413 10.134 4.85278 9.48837 6.478 9.48837H8.8501C10.4753 9.48837 12.034 10.134 13.1832 11.2832C14.3324 12.4324 14.978 13.9911 14.978 15.6163ZM14.4016 16.1927C14.3913 16.1967 14.385 16.2014 14.385 16.2093L14.4016 16.1927ZM1.53614 15.6163C1.53614 15.7254 1.6247 15.814 1.73382 15.814H13.5943C13.6467 15.814 13.697 15.7931 13.7341 15.7561C13.7711 15.719 13.792 15.6687 13.792 15.6163C13.792 14.3056 13.2713 13.0486 12.3445 12.1219C11.4177 11.1951 10.1608 10.6744 8.8501 10.6744H6.478C5.16734 10.6744 3.91036 11.1951 2.98358 12.1219C2.0568 13.0486 1.53614 14.3056 1.53614 15.6163Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="ayur-toggle-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
+  </div>
+  <!------------- Loader End ----------->
+  <!------------- Header Section start ----------->
+  <div class="ayur-menu-wrapper">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-2 col-md-4 col-sm-5 col-6">
+          <div class="ayur-menu-logo">
+            <a href="index.html"><img src="assets/images/New-Logo.png" /></a>
           </div>
         </div>
-      </div>
-    </div>
-    <!------------- Header Section End ----------->
-    <!------------- Breadcrumb Section start ----------->
-    <div class="ayur-bread-section">
-      <div class="ayur-breadcrumb-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="ayur-bread-content">
-                <h2>Contact us</h2>
-                <div class="ayur-bread-list">
-                  <span>
-                    <a href="index.html">Home</a>
+        <div class="col-lg-10 col-md-8 col-sm-7 col-6">
+          <div class="ayur-navmenu-wrapper">
+            <div class="ayur-nav-menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li class="ayur-has-menu">
+                  <a href="javascript:void(0)">Health Concerns
+                    <svg version="1.1" x="0" y="0" viewBox="0 0 491.996 491.996"
+                      style="enable-background: new 0 0 512 512">
+                      <g>
+                        <path
+                          d="m484.132 124.986-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86-7.208 0-13.964 2.792-19.036 7.86l-183.84 183.848L62.056 108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968 2.788-19.036 7.856l-16.12 16.128c-10.496 10.488-10.496 27.572 0 38.06l219.136 219.924c5.064 5.064 11.812 8.632 19.084 8.632h.084c7.212 0 13.96-3.572 19.024-8.632l218.932-219.328c5.072-5.064 7.856-12.016 7.864-19.224 0-7.212-2.792-14.068-7.864-19.128z"
+                          opacity="1"></path>
+                      </g>
+                    </svg>
+                  </a>
+                  <ul class="ayur-submenu">
+                    <li><a href="./kidney.html">Kidney</a></li>
+                    <li><a href="./cancer.html">Cancer</a></li>
+                    <li><a href="./leucoderma.html">Leucoderma</a></li>
+                    <li><a href="./alzheimer.html">Alzheimer</a></li>
+                    <li><a href="./motor-neuron-disease.html">Motor Neuron</a></li>
+                    <li><a href="./fatty-liver.html">Fatty Liver</a></li>
+                    <li><a href="./parkinson.html">Parkinson</a></li>
+                    <li><a href="./psoriasis.html">Psoriasis</a></li>
+                    <li><a href="./pcod.html">PCOD</a></li>
+                    <li><a href="./erectile-dysfunction.html">ED</a></li>
+                    <li><a href="./eczema.html">Eczema</a></li>
+                    <li><a href="./jaundice.html">Jaundice</a></li>
+                    <li><a href="./gallbladder.html">Gallbladder</a></li>
+                    <li><a href="./diabetes.html">Diabetes</a></li>
+                    <li><a href="./arthritis.html">Arthritis</a></li>
+                    <li><a href="./cerebral-palsy.html">Cerebral Palsy</a></li>
+                    <li><a href="./panchkarma.html">Panchkarma</a></li>
+                    <li><a href="./liver-cirrhosis.html">Liver Cirrhosis</a></li>
+                  </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="ayur-has-menu">
+                  <a href="javascript:void(0)">Pages
+                    <svg version="1.1" x="0" y="0" viewBox="0 0 491.996 491.996"
+                      style="enable-background: new 0 0 512 512">
+                      <g>
+                        <path
+                          d="m484.132 124.986-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86-7.208 0-13.964 2.792-19.036 7.86l-183.84 183.848L62.056 108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968 2.788-19.036 7.856l-16.12 16.128c-10.496 10.488-10.496 27.572 0 38.06l219.136 219.924c5.064 5.064 11.812 8.632 19.084 8.632h.084c7.212 0 13.96-3.572 19.024-8.632l218.932-219.328c5.072-5.064 7.856-12.016 7.864-19.224 0-7.212-2.792-14.068-7.864-19.128z"
+                          opacity="1"></path>
+                      </g>
+                    </svg>
+                  </a>
+                  <ul class="ayur-submenu">
+                    <li><a href="blog-single.html">Blog Single</a></li>
+                    <li><a href="shop-single.html">Shop Single</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="ayur-nav-icons">
+              <div class="ayur-nav-like">
+                <a href="wishlist.html">
+                  <span class="icon">
+                    <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.6647 0C12.9947 0 11.5308 0.744645 10.4311 2.15348C10.2912 2.33306 10.16 2.51925 10.0379 2.7114C9.91579 2.51925 9.78456 2.33306 9.64463 2.15348C8.54497 0.744645 7.08101 0 5.41104 0C2.25633 0 0 2.64149 0 5.81114C0 9.43548 2.97046 12.8513 9.63153 16.8865C9.75642 16.9622 9.89715 17 10.0379 17C10.1786 17 10.3193 16.9622 10.4442 16.8866C17.1053 12.8513 20.0757 9.43552 20.0757 5.81118C20.0757 2.64318 17.8213 0 14.6647 0ZM16.4353 10.3241C15.0486 11.8714 12.953 13.5007 10.0379 15.2969C7.12277 13.5007 5.02717 11.8714 3.64041 10.3241C2.24617 8.7684 1.56842 7.2922 1.56842 5.81118C1.56842 3.52898 3.11072 1.56842 5.41104 1.56842C6.58249 1.56842 7.58134 2.07776 8.37986 3.08233C9.01836 3.88572 9.28738 4.71529 9.28927 4.72121C9.33905 4.88083 9.43853 5.02035 9.57321 5.11943C9.7079 5.2185 9.87072 5.27194 10.0379 5.27194C10.2051 5.27194 10.3679 5.2185 10.5026 5.11943C10.6373 5.02035 10.7368 4.88083 10.7866 4.72121C10.789 4.71329 11.05 3.90959 11.6675 3.11848C12.4703 2.08992 13.4787 1.56838 14.6647 1.56838C16.9675 1.56838 18.5073 3.53082 18.5073 5.81114C18.5073 7.29216 17.8296 8.76836 16.4353 10.3241Z"
+                        fill="#222222" />
+                    </svg>
                   </span>
-                  <span class=""><a href="blog.html">Health Concerns</a></span>
-                  <span class="ayur-active-page">Kidney</span>
-                </div>
+                </a>
               </div>
+              <div class="ayur-nav-product">
+                <a href="cart.html">
+                  <span class="icon">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.91343 4.14634H2.81175C2.44474 4.14636 2.09137 4.28542 1.82279 4.53554C1.55421 4.78565 1.39037 5.12824 1.36426 5.49432L0.65358 15.4455C0.639403 15.6443 0.666313 15.8439 0.732633 16.0318C0.798954 16.2197 0.903263 16.3919 1.03906 16.5378C1.17486 16.6836 1.33924 16.7999 1.52195 16.8794C1.70466 16.9589 1.9018 17 2.10107 17H13.5881C13.7873 16.9999 13.9844 16.9587 14.1671 16.8792C14.3497 16.7996 14.514 16.6833 14.6498 16.5375C14.7856 16.3917 14.8899 16.2195 14.9563 16.0316C15.0226 15.8438 15.0496 15.6443 15.0356 15.4455L14.3249 5.49432C14.2988 5.12824 14.1349 4.78565 13.8664 4.53554C13.5978 4.28542 13.2444 4.14636 12.8774 4.14634H11.7836V3.93902C11.7836 2.89433 11.3686 1.89242 10.6299 1.15371C9.89118 0.415003 8.88927 0 7.84458 0C5.7486 0 3.81143 1.66932 3.90556 3.93902L3.91343 4.14634ZM11.7836 5.39024V8.5C11.7836 8.66495 11.7181 8.82315 11.6014 8.93979C11.4848 9.05642 11.3266 9.12195 11.1617 9.12195C10.9967 9.12195 10.8385 9.05642 10.7219 8.93979C10.6052 8.82315 10.5397 8.66495 10.5397 8.5V5.39024H5.14946V8.5C5.14946 8.66495 5.08393 8.82315 4.96729 8.93979C4.85065 9.05642 4.69246 9.12195 4.52751 9.12195C4.36255 9.12195 4.20436 9.05642 4.08772 8.93979C3.97108 8.82315 3.90556 8.66495 3.90556 8.5C3.90556 8.5 3.95946 7.04671 3.94163 5.39024H2.81175C2.7594 5.39032 2.70902 5.41019 2.67072 5.44588C2.63241 5.48156 2.60903 5.53042 2.60526 5.58263L1.89417 15.5339C1.89211 15.5623 1.89594 15.5908 1.90541 15.6177C1.91488 15.6446 1.92979 15.6692 1.94921 15.69C1.96862 15.7109 1.99213 15.7275 2.01825 15.7389C2.04438 15.7503 2.07257 15.7561 2.10107 15.7561H13.5881C13.6165 15.756 13.6447 15.7501 13.6708 15.7386C13.6968 15.7272 13.7203 15.7106 13.7397 15.6898C13.7591 15.669 13.774 15.6444 13.7835 15.6176C13.793 15.5907 13.7969 15.5622 13.795 15.5339L13.0839 5.58263C13.0801 5.53042 13.0567 5.48156 13.0184 5.44588C12.9801 5.41019 12.9298 5.39032 12.8774 5.39024H11.7836ZM10.5397 4.14634V3.93902C10.5397 3.22423 10.2558 2.53872 9.75032 2.03329C9.24489 1.52785 8.55937 1.2439 7.84458 1.2439C7.12979 1.2439 6.44427 1.52785 5.93884 2.03329C5.43341 2.53872 5.14946 3.22423 5.14946 3.93902V4.14634H10.5397Z"
+                        fill="#222222" />
+                    </svg>
+                  </span>
+                  <span class="ayur-nav-provalue">2</span>
+                </a>
+              </div>
+              <div class="ayur-nav-user">
+                <a href="profile.html">
+                  <span class="icon">
+                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.66405 0C10.1737 0 12.2106 2.03684 12.2106 4.54651C12.2106 7.05619 10.1737 9.09302 7.66405 9.09302C5.15438 9.09302 3.11754 7.05619 3.11754 4.54651C3.11754 2.03684 5.15438 0 7.66405 0ZM7.66405 1.18605C5.80907 1.18605 4.30359 2.69153 4.30359 4.54651C4.30359 6.40149 5.80907 7.90698 7.66405 7.90698C9.51903 7.90698 11.0245 6.40149 11.0245 4.54651C11.0245 2.69153 9.51903 1.18605 7.66405 1.18605ZM14.978 15.6163C14.978 15.9833 14.8322 16.3352 14.5727 16.5947C14.3132 16.8542 13.9613 17 13.5943 17H1.73382C1.36683 17 1.01488 16.8542 0.75538 16.5947C0.495882 16.3352 0.350098 15.9833 0.350098 15.6163C0.350098 13.9911 0.995714 12.4324 2.14492 11.2832C3.29413 10.134 4.85278 9.48837 6.478 9.48837H8.8501C10.4753 9.48837 12.034 10.134 13.1832 11.2832C14.3324 12.4324 14.978 13.9911 14.978 15.6163ZM14.4016 16.1927C14.3913 16.1967 14.385 16.2014 14.385 16.2093L14.4016 16.1927ZM1.53614 15.6163C1.53614 15.7254 1.6247 15.814 1.73382 15.814H13.5943C13.6467 15.814 13.697 15.7931 13.7341 15.7561C13.7711 15.719 13.792 15.6687 13.792 15.6163C13.792 14.3056 13.2713 13.0486 12.3445 12.1219C11.4177 11.1951 10.1608 10.6744 8.8501 10.6744H6.478C5.16734 10.6744 3.91036 11.1951 2.98358 12.1219C2.0568 13.0486 1.53614 14.3056 1.53614 15.6163Z"
+                        fill="#222222" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="ayur-toggle-btn">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!------------- Breadcrumb Section end ----------->
-    <!------------- Kidney Section start ----------->
-    <div class="ayur-bgcover ayur-disease-wrapper">
-      <div class="ayur-disease-title">
-        <p class="ayur-disease-heading">
-          <i>
-            Personalized Ayurvedic Solutions for Your
-            <span class="ayur-disease-type">Kidney</span> Health Concerns</i
-          >
-        </p>
-        <p class="ayur-disease-content">
-          At Atharvveda, we understand that each individual's health journey is
-          unique. Our team of experienced Ayurvedic practitioners offers
-          personalized consultations and natural remedies for a variety of
-          health conditions. Explore the health concerns we address and discover
-          how Ayurveda can guide you toward holistic well-being.
-        </p>
-      </div>
-      <div class="ayur-disease-examples">
-        <div class="ayur-disease-example">
-          <img
-            src="./assets/images/chronic-kidney.webp"
-            width="100"
-            height="100"
-          />
-          <p class="ayur-disease-example-heading">Chronic Kidney Disease</p>
-          <p class="ayur-disease-example-content">
-            CKD involves the gradual loss of kidney function over time. Symptoms
-            may include fatigue, swelling, and changes in urination. Our
-            Ayurvedic approach focuses on herbal formulations and dietary
-            adjustments to support kidney function and slow disease progression.
-          </p>
-        </div>
-        <div class="ayur-disease-example">
-          <img src="./assets/images/nephrotic.webp" width="100" height="100" />
-          <p class="ayur-disease-example-heading">Nephrotic Syndrome</p>
-          <p class="ayur-disease-example-content">
-            Characterized by high levels of protein in urine, swelling, and low
-            blood protein levels, Nephrotic Syndrome requires careful
-            management. We provide personalized Ayurvedic treatments aimed at
-            restoring balance and reducing symptoms.
-          </p>
-        </div>
-        <div class="ayur-disease-example">
-          <img
-            src="./assets/images/polycystic-kidney.webp"
-            width="100"
-            height="100"
-          />
-          <p class="ayur-disease-example-heading">
-            Polycystic Kidney Disease (PKD)
-          </p>
-          <p class="ayur-disease-example-content">
-            A genetic disorder causing numerous cysts in the kidneys, leading to
-            enlarged kidneys and reduced function. Our natural therapies aim to
-            manage symptoms and improve kidney health.
-          </p>
-        </div>
-        <div class="ayur-disease-example">
-          <img
-            src="./assets/images/elevated-creatinine.webp"
-            width="100"
-            height="100"
-          />
-          <p class="ayur-disease-example-heading">Elevated Creatinine Levels</p>
-          <p class="ayur-disease-example-content">
-            High creatinine levels indicate impaired kidney function. Through
-            Ayurvedic detoxification and herbal remedies, we strive to lower
-            creatinine levels and enhance renal performance.
-          </p>
-        </div>
-        <div class="ayur-disease-example">
-          <img
-            src="./assets/images/proteinuria.webp"
-            width="100"
-            height="100"
-          />
-          <p class="ayur-disease-example-heading">Proteinuria</p>
-          <p class="ayur-disease-example-content">
-            The presence of excess protein in urine can be a sign of kidney
-            damage. Our treatments focus on strengthening kidney tissues and
-            reducing protein leakage.
-          </p>
-        </div>
-        <div class="ayur-disease-example">
-          <img
-            src="./assets/images/kidney-shrinkage.webp"
-            width="100"
-            height="100"
-          />
-          <p class="ayur-disease-example-heading">Kidney Shrinkage</p>
-          <p class="ayur-disease-example-content">
-            A condition where kidneys reduce in size due to chronic damage. We
-            offer therapies to nourish and rejuvenate kidney tissues, aiming to
-            restore their function.
-          </p>
-        </div>
-        <div class="ayur-disease-example">
-          <img
-            src="./assets/images/nephropathy.webp"
-            width="100"
-            height="100"
-          />
-          <p class="ayur-disease-example-heading">IgA Nephropathy</p>
-          <p class="ayur-disease-example-content">
-            An autoimmune disease affecting the kidneys, leading to
-            inflammation. Our approach includes immune-modulating herbs and
-            lifestyle modifications to manage the condition.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!------------- Kidney Section end ----------->
-    <!------------- footer Section start ----------->
-    <div class="ayur-footer-section">
+  </div>
+  <!------------- Header Section End ----------->
+  <!------------- Breadcrumb Section start ----------->
+  <div class="ayur-bread-section">
+    <div class="ayur-breadcrumb-wrapper">
       <div class="container">
-        <div class="ayur-sign-sec">
-          <div class="row align-items-center">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="ayur-sign-head">
-                <h3>Get Ayurvedic wellness tips in your inbox...</h3>
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12">
-              <form method="" class="ayur-subscribe-sec">
-                <div class="ayur-form-input">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Enter Your Email..."
-                    name="email"
-                  />
-                </div>
-                <div class="ayur-form-btn">
-                  <a href="javascript:void(0)" class="ayur-btn">Subscribe</a>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="ayur-footer-sec">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="ayur-footer-logosec">
-                <div class="ayur-footer-logo">
-                  <img src="assets/images/footer-logo.svg" alt="logo" />
-                </div>
-                <p>
-                  Discover the essence of Ayurveda with Atharv Veda. Your
-                  journey to holistic health and well-being starts here.
-                </p>
-                <ul class="ayur-social-link">
-                  <li>
-                    <a href="javascript:void(0)">
-                      <svg
-                        width="11"
-                        height="20"
-                        viewBox="0 0 11 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M6.74157 20V10.8777H9.80231L10.2615 7.32156H6.74157V5.05147C6.74157 4.0222 7.02622 3.32076 8.50386 3.32076L10.3854 3.31999V0.13923C10.06 0.0969453 8.94308 0 7.64308 0C4.92848 0 3.07002 1.65697 3.07002 4.69927V7.32156H0V10.8777H3.07002V20H6.74157Z"
-                          fill="#E4D4CF"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.8138 8.46864L19.0991 0H17.3727L11.0469 7.3532L5.9944 0H0.166992L7.8073 11.1193L0.166992 20H1.89349L8.57377 12.2348L13.9095 20H19.7369L11.8133 8.46864H11.8138ZM9.4491 11.2173L8.67498 10.1101L2.51557 1.29967H5.16736L10.1381 8.40994L10.9122 9.51718L17.3735 18.7594H14.7218L9.4491 11.2177V11.2173Z"
-                          fill="#E4D4CF"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <svg
-                        width="17"
-                        height="20"
-                        viewBox="0 0 17 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.89667 0C3.41417 0.000833333 0.5 3.51333 0.5 7.34333C0.5 9.11917 1.4925 11.335 3.08167 12.0375C3.535 12.2417 3.475 11.9925 3.865 10.5008C3.88295 10.4406 3.88454 10.3766 3.8696 10.3156C3.85466 10.2545 3.82374 10.1985 3.78 10.1533C1.50833 7.52583 3.33667 2.12417 8.5725 2.12417C16.15 2.12417 14.7342 12.6092 9.89083 12.6092C8.6425 12.6092 7.7125 11.6292 8.00667 10.4167C8.36333 8.9725 9.06167 7.42 9.06167 6.37917C9.06167 3.75583 5.15333 4.145 5.15333 7.62083C5.15333 8.695 5.53333 9.42 5.53333 9.42C5.53333 9.42 4.27583 14.5 4.0425 15.4492C3.6475 17.0558 4.09583 19.6567 4.135 19.8808C4.15917 20.0042 4.2975 20.0433 4.375 19.9417C4.49917 19.7792 6.01917 17.6108 6.445 16.0433C6.6 15.4725 7.23583 13.1558 7.23583 13.1558C7.655 13.9125 8.86333 14.5458 10.1508 14.5458C13.9808 14.5458 16.7492 11.1792 16.7492 7.00167C16.7358 2.99667 13.3083 0 8.89667 0Z"
-                          fill="#E4D4CF"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <svg
-                        width="21"
-                        height="20"
-                        viewBox="0 0 21 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M15.4996 0H5.49988C2.75019 0 0.5 2.25019 0.5 4.99988V15.0001C0.5 17.7491 2.75019 20 5.49988 20H15.4996C18.2493 20 20.4995 17.7491 20.4995 15.0001V4.99988C20.4995 2.25019 18.2493 0 15.4996 0ZM18.8328 15.0001C18.8328 16.8376 17.3381 18.3333 15.4996 18.3333H5.49988C3.66218 18.3333 2.16671 16.8376 2.16671 15.0001V4.99988C2.16671 3.16193 3.66218 1.66671 5.49988 1.66671H15.4996C17.3381 1.66671 18.8328 3.16193 18.8328 4.99988V15.0001Z"
-                          fill="#E4D4CF"
-                        />
-                        <path
-                          d="M15.9172 5.83295C16.6075 5.83295 17.1672 5.27332 17.1672 4.58298C17.1672 3.89264 16.6075 3.33301 15.9172 3.33301C15.2269 3.33301 14.6672 3.89264 14.6672 4.58298C14.6672 5.27332 15.2269 5.83295 15.9172 5.83295Z"
-                          fill="#E4D4CF"
-                        />
-                        <path
-                          d="M10.4999 5C7.73793 5 5.5 7.23818 5.5 9.99988C5.5 12.7606 7.73793 15.0002 10.4999 15.0002C13.261 15.0002 15.4998 12.7606 15.4998 9.99988C15.4998 7.23818 13.261 5 10.4999 5ZM10.4999 13.3335C8.65915 13.3335 7.16671 11.8411 7.16671 9.99988C7.16671 8.15866 8.65915 6.66671 10.4999 6.66671C12.3406 6.66671 13.833 8.15866 13.833 9.99988C13.833 11.8411 12.3406 13.3335 10.4999 13.3335Z"
-                          fill="#E4D4CF"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-              <div class="ayur-footer-box">
-                <h4>Quick Links</h4>
-                <ul class="ayur-links">
-                  <li><a href="javascript:void(0)">Home</a></li>
-                  <li><a href="wishlist.html">About</a></li>
-                  <li><a href="profile.html">Health Concerns</a></li>
-                  <li><a href="javascript:void(0)">Blog</a></li>
-                  <li><a href="javascript:void(0)">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-              <div class="ayur-footer-box">
-                <h4>Consultation</h4>
-                <ul class="ayur-links">
-                  <li><a href="javascript:void(0)">Book Now</a></li>
-                  <li><a href="wishlist.html">Process</a></li>
-                  <li><a href="profile.html">Doctors</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="ayur-footer-box">
-                <h4>Connect with Us</h4>
-                <ul class="ayur-contact-list">
-                  <li class="ayur-contact-box">
-                    <img src="assets/images/mobile.png" alt="icon" />
-                    <p>support@atharvveda.us</p>
-                  </li>
-                  <li class="ayur-contact-box">
-                    <img src="assets/images/email.png" alt="icon" />
-                    <p>+1 (800) 123-4567</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-            <div class="ayur-copyright-para">
-              <p>Copyright © 2025. All Right Reserved. Atharv Veda</p>
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="ayur-bread-content">
+              <h2>Health Concerns</h2>
+              <div class="ayur-bread-list">
+                <span>
+                  <a href="index.html">Home</a>
+                </span>
+                <span class=""><a href="blog.html">Health Concerns</a></span>
+                <span class="ayur-active-page">Kidney</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="ayur-bgshape ayur-footer-bgshape">
-        <img src="assets/images/footer-left.png" alt="img" />
-        <img src="assets/images/footer-right.png" alt="img" />
       </div>
     </div>
-    <!------------- footer Section end ----------->
-    <!-- custom link  -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/select2.min.js"></script>
-    <script src="assets/js/SmoothScroll.min.js"></script>
-    <script src="assets/js/flatpickr.js"></script>
-    <script src="assets/js/vanilla-tilt.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-  </body>
+  </div>
+  <!------------- Breadcrumb Section end ----------->
+  <!------------- Kidney Section start ----------->
+  <div class="ayur-kidney-section" style="background:#071818; padding:60px 0 40px 0;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Heading and Image -->
+        <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+          <div class="text-white" style="max-width:600px;">
+            <h1 style="font-size:3rem; font-weight:800;">Ayurvedic <span
+                style="color:#ffb300;font-size: larger;">Kidney</span><br>
+              Treatment
+            </h1>
+            <div style="margin:32px 0 24px 0;">
+              <span
+                style="background:#ff5722; color:#fff; font-size:2.5rem; font-weight:700; padding:10px 32px; border-radius:4px; display:inline-block;">ATHARVEDA</span>
+            </div>
+            <div style="font-size:2rem; color:#fff; font-weight:400;">100% Ayurvedic Treatment</div>
+            <div style="margin-top:40px;">
+              <img src="assets/images/chronic-kidney.webp" alt="Kidney" style="max-width:180px; display:block;" />
+            </div>
+          </div>
+        </div>
+        <!-- Right Side: Form -->
+        <div class="col-lg-5 col-md-12">
+          <div class="p-4 bg-white rounded shadow" style="max-width:400px; margin:auto;">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Full Name / पूरा नाम" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Enter 10 Digit Mobile No / 10 अंकों का मोबाइल नंबर"
+                  maxlength="10" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email / ईमेल" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" value="Kidney" readonly
+                  style="background:#f5f5f5; font-weight:600;">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="2"
+                  placeholder="Describe Your Symptoms Here / यहाँ अपने लक्षणों का वर्णन करें" required></textarea>
+              </div>
+              <div class="text-center mb-2">
+                <span style="color:#00695c; font-size:1.25rem; font-weight:700;">Get Best Ayurvedic Treatment</span>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-warning text-white"
+                  style="font-size:1.2rem; font-weight:600; background:#ff5722; border:none;">Enquire Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------- Kidney Section end ----------->
+  <!------------- What Are Kidney Diseases? Section start ----------->
+  <div class="ayur-kidney-info-section"
+    style="background:linear-gradient(180deg, #f8f9fa 0%, #fff 100%); padding:60px 0 40px 0; border-radius:0 0 24px 24px; margin-bottom:40px;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Heading, Text, Button -->
+        <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+          <h2 style="font-size:3rem; font-weight:800; color:#00423b; margin-bottom:24px;">
+            What Are <span style="color:#ffb300;font-size: larger;">Kidney Diseases?</span>
+          </h2>
+          <p style="font-size:1.25rem; color:#18423b; margin-bottom:24px; max-width:800px;">
+            Kidneys are vital organs responsible for eliminating waste and toxins from the body while maintaining a
+            proper <b>fluid</b> and <b>electrolyte</b> balance. They also regulate blood pressure and help produce red
+            blood cells.
+            However, when kidneys become damaged or diseased, they lose their ability to function effectively.
+            <br>
+            Kidney disease may develop due to underlying health issues such as high blood pressure, diabetes,
+            infections, or even an unhealthy lifestyle. If left untreated, it can lead to <b
+              style='color:#00796b;'>chronic kidney disease (CKD)</b>
+            or kidney failure, which affects the body's internal systems and overall health.
+            <br>
+            Ayurveda, the ancient system of natural healing, offers a <b>safe</b> and holistic way to manage kidney
+            disease.
+            Ayurvedic treatment works to <b>rejuvenate</b> kidney function by using herbs, diet changes, and detox
+            therapies
+            that address the root cause of the disease instead of just managing the symptoms. These methods not only
+            restore kidney health but also improve the body’s overall balance and vitality.
+
+          </p>
+          <a href="#" class="btn"
+            style="background:#00423b; color:#fff; font-size:1rem; font-weight:500; padding:10px 32px; border-radius:32px;">Book
+            Consultation</a>
+        </div>
+        <!-- Right Side: Image -->
+        <div class="col-lg-5 col-md-12 text-center">
+          <div
+            style="background:#fff; border-radius:24px; box-shadow:0 8px 32px rgba(0,0,0,0.08); padding:16px 0 0 0; display:inline-block;">
+            <img src="assets/images/chronic-kidney.webp" alt="Kidney"
+              style="max-width:100%; border-radius:16px; box-shadow:0 4px 24px rgba(255,179,0,0.15);">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------- What Are Kidney Diseases? Section end ----------->
+
+  <!-- Ayurvedic Kidney Treatments We Offer Section start -->
+  <div class="ayur-kidney-treatments-section"
+    style="background:linear-gradient(180deg, #f8f9fa 0%, #fff 100%); padding:60px 0 40px 0; border-radius:0 0 24px 24px; margin-bottom:40px;">
+    <div class="container">
+      <h2 style="font-size:3rem; font-weight:800; color:#00423b; margin-bottom:32px; text-align:center;">
+        Ayurvedic Kidney Treatments <span style="color:#ffb300;font-size: larger;">We Offer</span>
+      </h2>
+      <div class="row" style="display:flex; flex-wrap:wrap; justify-content:center; gap:32px 0;">
+        <div class="col-12">
+          <div class="treatments-grid"
+            style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:32px;">
+            <!-- 22 Boxes -->
+            <a href="#" class="treatment-box">
+              <img src="assets/images/chronic-kidney.webp" alt="Acute Kidney Disease">
+              <span>ACUTE KIDNEY DISEASE</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/chronic-kidney.webp" alt="Chronic Kidney Disease">
+              <span>CHRONIC KIDNEY DISEASE(CKD)</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/nephrotic.webp" alt="Nephrotic Syndrome">
+              <span>NEPHROTIC SYNDROME</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/kidney-shrinkage.webp" alt="Polycystic Kidney Disease">
+              <span>POLYCYSTIC KIDNEY DISEASE(PKD)</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/elevated-creatinine.webp" alt="Creatinine">
+              <span>High Creatinine Levels</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/urine-test.png" alt="Proteinuria">
+              <span>PROTEINURIA</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/kidney-shrinkage.webp" alt="Kidney Shrinkage">
+              <span>KIDNEY SHRINKAGE</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/nephropathy.webp" alt="IGA-Nephropathy">
+              <span>IGA-NEPHROPATHY</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/diabetes.webp" alt="Kidney Detox">
+              <span>Kidney Detox</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/gall-bladder.webp" alt="Avoiding Dialysis">
+              <span>Avoiding Dialysis</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/liver-cirrhosis.jpg" alt="Kidney Cysts">
+              <span>Kidney Cysts</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/eczema.webp" alt="Kidney Swelling">
+              <span>Kidney Swelling</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/arthritis.webp" alt="Glomerulonephritis">
+              <span>Glomerulonephritis</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/obesity.webp" alt="kidney failure">
+              <span>Kidney Failure</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/eczema.webp" alt="kidney infection">
+              <span>Kidney Infection</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/eczema.webp" alt="Kidney Stones">
+              <span>Kidney Stones</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/eczema.webp" alt="High Blood Urea">
+              <span>High Blood Urea</span>
+            </a>
+            <a href="#" class="treatment-box">
+              <img src="assets/images/eczema.webp" alt="Foamy Urine">
+              <span>Foamy Urine</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .treatments-grid .treatment-box {
+      background: #0b3c3c;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+      padding: 32px 16px 24px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #ffe0a3;
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .treatments-grid .treatment-box img {
+      max-width: 90px;
+      margin-bottom: 18px;
+      border-radius: 50%;
+      box-shadow: 0 4px 24px rgba(255, 179, 0, 0.15);
+      background: #fff;
+      padding: 8px;
+    }
+
+    .treatments-grid .treatment-box span {
+      display: block;
+      margin-top: 8px;
+      font-size: 1.1rem;
+      color: #ffe0a3;
+      font-weight: 700;
+    }
+
+    .treatments-grid .treatment-box:hover {
+      background: #ffb300;
+      color: #fff;
+      box-shadow: 0 8px 32px rgba(255, 179, 0, 0.25);
+    }
+
+    .treatments-grid .treatment-box:hover span {
+      color: #fff;
+    }
+  </style>
+  <!-- Ayurvedic Kidney Treatments We Offer Section end -->
+
+  <!------------- Ayurvedic Kidney Disease Treatment Info Section start ----------->
+  <div class="ayur-kidney-treatment-info-section"
+    style="background:linear-gradient(90deg, #f8f9fa 60%, #fffbe7 100%); padding:60px 0 40px 0; margin-bottom:40px; border-radius:24px;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Image -->
+        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0 text-center">
+          <img src="assets/images/chronic-kidney.webp" alt="Kidney"
+            style="max-width:340px; border-radius:16px; box-shadow:0 8px 32px rgba(0,0,0,0.10); background:#fff; padding:16px;" />
+        </div>
+        <!-- Right Side: Heading and Content -->
+        <div class="col-lg-7 col-md-12">
+          <h2 style="font-size:2.8rem; font-weight:800; color:#00423b; margin-bottom:18px;">
+            Ayurvedic Kidney Disease <span style="color:#ffb300;font-size: larger;">Treatment</span>
+          </h2>
+          <p style="font-size:1.25rem; color:#18423b; margin-bottom:18px;">
+            Ayurvedic kidney treatment focuses on healing the kidneys naturally by restoring their function using a
+            combination of herbs, a kidney-supportive diet, and detox therapies. This approach is non-invasive and free
+            from the side effects often seen in conventional treatments.
+          </p>
+          <p style="font-size:1.25rem; color:#18423b; margin-bottom:18px;">
+            Powerful Ayurvedic herbs such as <b>Punarnava</b>, <b>Varun</b>, <b>Gokshura</b>, <b>Triphala</b>, and
+            <b>Turmeric</b> are known for their
+            detoxifying and anti-inflammatory properties. These herbs help improve urine flow, reduce swelling, and
+            protect the kidneys from further damage.
+          </p>
+          <p style="font-size:1.25rem; color:#18423b; margin-bottom:18px;">
+            A proper <b>renal diet</b> is also emphasized, including fresh fruits, vegetables, fluids, and coconut
+            water.
+            Processed and animal-based foods are avoided, as they can worsen kidney conditions. A vegetarian or vegan
+            diet is recommended to support recovery.
+          </p>
+          <p style="font-size:1.25rem; color:#18423b;">
+            At Atharveda, patients receive personalized Ayurvedic kidney care, where treatments are tailored to
+            their health conditions. This includes managing kidney failure without dialysis. The goal is to treat the
+            underlying causes of kidney disease and help patients regain natural kidney function, leading to long-term
+            recovery.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------- Ayurvedic Kidney Disease Treatment Info Section end ----------->
+  <!-- <div class="ayur-kidney-treatment-info-section"
+    style="background:linear-gradient(90deg, #f8f9fa 60%, #fffbe7 100%); padding:60px 0 40px 0; margin-bottom:40px; border-radius:24px;">
+    <div class="container">
+      <div class="row align-items-center flex-row-reverse">
+        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0 text-center">
+          <img src="assets/images/chronic-kidney.webp" alt="Kidney"
+            style="max-width:340px; border-radius:16px; box-shadow:0 8px 32px rgba(0,0,0,0.10); background:#fff; padding:16px;" />
+        </div>
+        <div class="col-lg-7 col-md-12">
+          <h2 style="font-size:2.8rem; font-weight:800; color:#00423b; margin-bottom:18px;">
+            Meet Our Ayurvedic Expert: <span style="color:#ffb300;font-size: larger;">Dr. Puneet Dhawan</span>
+          </h2>
+          <p style="font-size:1.25rem; color:#18423b; margin-bottom:18px;">
+            Dr. Puneet Dhawan is a well known name in the field of <b>Ayurvedic medicine for kidney disease</b>. He is
+            an esteemed <b>Ayurvedic kidney expert</b> and leading 5th generation of Atharveda, one of the finest
+            healthcare centres in India, UAE, USA and UK. He specialises in providing the <b>kidney infection
+              treatment</b>. Dr. Puneet Dhawan and his team of <b>Ayurvedic kidney doctors</b> offer personalised
+            <b>treatment for kidney disease</b> plans that rely on natural herbs and techniques to improve overall
+            function and prevent further damaged kidney cells.
+          </p>
+          <p style="font-size:1.25rem; color:#18423b; margin-bottom:18px;">
+            <b>Atharveda's treatments</b> focus on not only treating the symptoms but also addressing the
+            underlying causes of kidney disease. With a patient-centred approach and a wealth of experience, Dr. Puneet
+            Dhawan and his team have helped millions of patients regain their health and improve their quality of life.
+            The centre's success stories are a testament to the effectiveness of their treatment methods and the
+            dedication of their staff.
+          </p>
+          <a href="#" class="btn"
+            style="background:#00423b; color:#fff; font-size:1rem; font-weight:500; padding:10px 32px; border-radius:32px; display:inline-block; margin-top:10px;">Book
+            Consultation</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Patient Testimonials Section start -->
+  <div class="container" style="margin-bottom: 40px;">
+    <h2 style="font-size:2.8rem; font-weight:800; color:#00423b; text-align:center; margin-bottom:32px;">
+      Patient <span style="color:#ffb300;font-size: larger;">Testimonials</span> <span
+        style="color:#00695c; font-size:2rem;">( रोगियों का
+        प्रमाण-पत्र )</span>
+    </h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center align-items-stretch g-4">
+            <div class="col-md-6">
+              <div class="testimonial-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User">
+                <div>
+                  <h4>Sachin</h4>
+                  <p>My name is Sachin and I live in Burari, Delhi. Few years back, my father had developed a high
+                    creatinine value and upon looking the internet for good clinics for curing this issue, came across
+                    Atharveda. From the first week itself, the creatinine levels started to show a consistent
+                    decline and now the levels are quite manageable.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="testimonial-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User">
+                <div>
+                  <h4>Sangeeta</h4>
+                  <p>My friend, Aashna, recently developed swelling in one of her kidneys. She constantly complained of
+                    pain, nausea etc. Hassled by the symptoms, she tried various options but to no avail. Then, upon her
+                    aunt’s advice, decided to pay a visit to Atharveda.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center align-items-stretch g-4">
+            <div class="col-md-6">
+              <div class="testimonial-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User">
+                <div>
+                  <h4>Ramesh</h4>
+                  <p>I was diagnosed with chronic kidney disease and was worried about dialysis. Atharveda’s
+                    treatment gave me hope. My health improved gradually and I feel much better now. Thank you for your
+                    support and care!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="testimonial-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User">
+                <div>
+                  <h4>Priya</h4>
+                  <p>After months of swelling and weakness, I found relief at Atharveda. The herbal medicines and
+                    dietary advice worked wonders for me. I am grateful to Dr. Puneet Dhawan and his team for their
+                    dedication.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center align-items-stretch g-4">
+            <div class="col-md-6">
+              <div class="testimonial-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User">
+                <div>
+                  <h4>Sunita</h4>
+                  <p>My creatinine levels were high and I was scared. The ayurvedic approach at Atharveda was
+                    gentle and effective. My reports are much better now and I feel energetic again. Highly recommended!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="testimonial-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User">
+                <div>
+                  <h4>Vikram</h4>
+                  <p>I had lost hope after being told I needed dialysis. Atharveda’s natural treatment helped me
+                    avoid it. The doctors are very supportive and the results are real. Thank you!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center align-items-stretch g-4">
+            <div class="col-md-6">
+              <div class="testimonial-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User">
+                <div>
+                  <h4>Meena</h4>
+                  <p>My mother’s kidney health improved a lot after following Atharveda’s treatment plan. The staff
+                    is very caring and the medicines are safe. We are very happy with the results.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="testimonial-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User">
+                <div>
+                  <h4>Arjun</h4>
+                  <p>I was suffering from proteinuria and nothing seemed to work. The ayurvedic medicines from Atharveda
+                    helped me recover. My protein levels are normal now. Thank you for your guidance!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators" style="bottom:-30px;">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+    </div>
+  </div>
+  <!-- Patient Testimonials Section end -->
+  <style>
+    #testimonialCarousel .carousel-inner {
+      min-height: 340px;
+    }
+
+    #testimonialCarousel .carousel-indicators [data-bs-target] {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #ffb300;
+      opacity: 0.5;
+      margin: 0 6px;
+      border: none;
+      transition: opacity 0.3s;
+    }
+
+    #testimonialCarousel .carousel-indicators .active {
+      opacity: 1;
+      background: #00423b;
+    }
+
+    .testimonial-box {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+      padding: 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      height: 100%;
+    }
+
+    .testimonial-box img {
+      width: 80px;
+      border-radius: 50%;
+      background: #f5f5f5;
+      padding: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .testimonial-box h4 {
+      font-weight: 700;
+      color: #18423b;
+      margin-bottom: 8px;
+    }
+
+    .testimonial-box p {
+      font-size: 1.15rem;
+      color: #444;
+      font-style: italic;
+      margin-bottom: 0;
+    }
+  </style>
+
+  <!------------- Ayurvedic Kidney Disease Treatment Info Section end ----------->
+
+
+  <!------------- FAQ Section start ----------->
+  <div class="container" style="margin-bottom: 40px;">
+    <h2 style="font-size:2.8rem; font-weight:800; color:#00423b; text-align:center; margin-bottom:32px;">
+      Frequently Asked <span style="color:#ffb300;font-size: larger;">Questions</span>
+    </h2>
+    <div class="row">
+      <div class="col-12">
+        <div class="accordion" id="faqAccordion">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    Can Ayurveda help in reducing creatinine levels?
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes, Ayurveda can help in reducing creatinine levels. Ayurveda offers
+                    comprehensive solutions for chronic kidney disease, including polycystic kidney disease ayurvedic
+                    treatment.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    How is Ayurvedic treatment different from conventional methods for kidney disease?
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body"> Ayurveda emphasizes naturally treating all diseases of the body.
+                    Ayurvedic treatment not only
+                    focuses on physical health but also mental health as also uses the natural ingredient in medicines.
+                    However, allopathy is backed by science. Chronic kidney disease treatment often involves a
+                    combination of medical interventions and lifestyle changes.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    How does Atharveda approach kidney disease treatment?
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Kidney Disease is a progressive medical condition, it can even lead to kidney failure if you don't
+                    treat them on time. Atharveda offers Lifestyle changes and various natural remedies that can
+                    help you manage Kidney Disease. These include:
+                    <br>
+                    <b>Diet</b> – A healthy diet is important for managing Kidney Disease. Atharveda recommends a
+                    plant-based foods diet, such as vegetables, whole grains, legumes, fruits, and fruits low in
+                    animal-based foods, such as dairy and meat, additionally avoiding or limiting high potassium and
+                    phosphorus foods such as dairy and bananas.
+                    <br>
+                    <b>Herbal remedies</b> – Ayurvedic herbs, such as Gokshura, Varuna, and Punarnava can be used to
+                    treat
+                    Kidney Disease. These Herbs contain properties that can help to reduce swelling and remove excess
+                    fluid from the body.
+                    <br>
+                    <b>Lifestyle changes</b> – Ayurveda focuses on maintaining a healthy lifestyle to manage Kidney
+                    Disease.
+                    This includes regular exercise, practicing yoga, and meditation which also helps in stress reduction
+                    and avoiding alcohol and smoking.
+                    <br>
+                    <b>Panchakarma</b> – It is an Ayurvedic detoxification therapy that can help eliminate toxins from
+                    the
+                    body.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    Is Atharveda suitable for all types of kidney diseases?
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, Atharveda treats all types of kidney diseases. Explore the benefits of kidney disease
+                    treatment in Delhi, which focuses on holistic healing and natural remedies.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    Are there any side effects of Ayurvedic treatment for kidneys?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    No Ayurvedic treatment does not have any side effects because Ayurvedic treatment only uses natural
+                    ingredients to treat illnesses. Kidney disease treatment aims to slow down the progression of the
+                    condition and manage its symptoms effectively.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    Are the Ayurvedic medicines safe for long-term use?
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, ayurvedic medicines are safe for long-term use, but you should consult your doctor before using
+                    any medicine. Ayurvedic medicine for chronic kidney disease offers a holistic approach to treatment.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq6">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    Can atharveda's treatment be used as a complementary therapy with allopathic treatments?
+                  </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, atharveda's treatment can be used as a complementary therapy with allopathic treatment. Many
+                    individuals opt for kidney disease ayurvedic treatment to complement conventional therapies and
+                    promote overall kidney health.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq8">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                    What lifestyle changes are recommended for kidney patients?
+                  </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Lifestyle changes – Ayurvedic treatment focuses on maintaining a healthy lifestyle to treat Kidney
+                    Disease. This includes exercising regularly, practicing meditation and yoga which help in reducing
+                    stress, and avoiding smoking and alcohol consumption.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq9">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                    Is Ayurvedic treatment good for kidney disease?
+                  </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="faq9"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, Ayurvedic treatment for Kidneys also helps to improve kidney function. The effectiveness of
+                    ayurvedic medicine for kidney disease, which emphasizes personalized care and addresses the root
+                    causes of the condition.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq10">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                    How does Atharveda customize treatment plans for individuals?
+                  </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="faq10"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Atharveda’s Ayurvedic doctor creates a personalized treatment plan according to each patient's
+                    unique dosha balance. The plan includes Lifestyle modification, dietary recommendations, and herbal
+                    remedies.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq11">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                    Is Ayurvedic treatment suitable for children with kidney issues?
+                  </button>
+                </h2>
+                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="faq11"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, Ayurvedic treatment is suitable for children with Kidney problems.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq12">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                    Can Ayurveda help in managing diabetes-related kidney problems?
+                  </button>
+                </h2>
+                <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="faq12"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, Ayurvedic treatment can help in managing diabetes-related kidney problems.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq13">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                    Does Atharveda provide support for dialysis patients?
+                  </button>
+                </h2>
+                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="faq13"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, Atharveda provides support for dialysis patients that includes lifestyle modification, dietary
+                    recommendations, and herbal remedies.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq14">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                    How does Ayurveda address kidney inflammation?
+                  </button>
+                </h2>
+                <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="faq14"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Ayurvedic treatment of kidney inflammation includes herbs such as Gokshura, Kaasni, Varunadi,
+                    Punarnava, and Palaash. These ayurvedic herbs help to reduce inflammation in the Kidney and also
+                    help to improve kidney functions.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Section end -->
+  <style>
+    .accordion-button {
+      background: #00594c;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 500;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background: #ffb300;
+      color: #00423b;
+    }
+
+    .accordion-item {
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .accordion-body {
+      background: #f8f9fa;
+      color: #18423b;
+      font-size: 1.15rem;
+      border-radius: 0 0 8px 8px;
+      padding: 18px 24px;
+    }
+
+    @media (max-width: 767px) {
+      .accordion-button {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+
+  <!------------- footer Section start ----------->
+  <div class="ayur-footer-section">
+    <div class="container">
+      <div class="ayur-sign-sec">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="ayur-sign-head">
+              <h3>Get Ayurvedic wellness tips in your inbox...</h3>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <form method="" class="ayur-subscribe-sec">
+              <div class="ayur-form-input">
+                <input type="email" class="form-control" placeholder="Enter Your Email..." name="email" />
+              </div>
+              <div class="ayur-form-btn">
+                <a href="javascript:void(0)" class="ayur-btn">Subscribe</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="ayur-footer-sec">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="ayur-footer-logosec">
+              <div class="ayur-footer-logo">
+                <img src="assets/images/footer-logo.svg" alt="logo" />
+              </div>
+              <p>
+                Discover the essence of Ayurveda with Atharv Veda. Your
+                journey to holistic health and well-being starts here.
+              </p>
+              <ul class="ayur-social-link">
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.74157 20V10.8777H9.80231L10.2615 7.32156H6.74157V5.05147C6.74157 4.0222 7.02622 3.32076 8.50386 3.32076L10.3854 3.31999V0.13923C10.06 0.0969453 8.94308 0 7.64308 0C4.92848 0 3.07002 1.65697 3.07002 4.69927V7.32156H0V10.8777H3.07002V20H6.74157Z"
+                        fill="#E4D4CF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.8138 8.46864L19.0991 0H17.3727L11.0469 7.3532L5.9944 0H0.166992L7.8073 11.1193L0.166992 20H1.89349L8.57377 12.2348L13.9095 20H19.7369L11.8133 8.46864H11.8138ZM9.4491 11.2173L8.67498 10.1101L2.51557 1.29967H5.16736L10.1381 8.40994L10.9122 9.51718L17.3735 18.7594H14.7218L9.4491 11.2177V11.2173Z"
+                        fill="#E4D4CF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.89667 0C3.41417 0.000833333 0.5 3.51333 0.5 7.34333C0.5 9.11917 1.4925 11.335 3.08167 12.0375C3.535 12.2417 3.475 11.9925 3.865 10.5008C3.88295 10.4406 3.88454 10.3766 3.8696 10.3156C3.85466 10.2545 3.82374 10.1985 3.78 10.1533C1.50833 7.52583 3.33667 2.12417 8.5725 2.12417C16.15 2.12417 14.7342 12.6092 9.89083 12.6092C8.6425 12.6092 7.7125 11.6292 8.00667 10.4167C8.36333 8.9725 9.06167 7.42 9.06167 6.37917C9.06167 3.75583 5.15333 4.145 5.15333 7.62083C5.15333 8.695 5.53333 9.42 5.53333 9.42C5.53333 9.42 4.27583 14.5 4.0425 15.4492C3.6475 17.0558 4.09583 19.6567 4.135 19.8808C4.15917 20.0042 4.2975 20.0433 4.375 19.9417C4.49917 19.7792 6.01917 17.6108 6.445 16.0433C6.6 15.4725 7.23583 13.1558 7.23583 13.1558C7.655 13.9125 8.86333 14.5458 10.1508 14.5458C13.9808 14.5458 16.7492 11.1792 16.7492 7.00167C16.7358 2.99667 13.3083 0 8.89667 0Z"
+                        fill="#E4D4CF" />
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.4996 0H5.49988C2.75019 0 0.5 2.25019 0.5 4.99988V15.0001C0.5 17.7491 2.75019 20 5.49988 20H15.4996C18.2493 20 20.4995 17.7491 20.4995 15.0001V4.99988C20.4995 2.25019 18.2493 0 15.4996 0ZM18.8328 15.0001C18.8328 16.8376 17.3381 18.3333 15.4996 18.3333H5.49988C3.66218 18.3333 2.16671 16.8376 2.16671 15.0001V4.99988C2.16671 3.16193 3.66218 1.66671 5.49988 1.66671H15.4996C17.3381 1.66671 18.8328 3.16193 18.8328 4.99988V15.0001Z"
+                        fill="#E4D4CF" />
+                      <path
+                        d="M15.9172 5.83295C16.6075 5.83295 17.1672 5.27332 17.1672 4.58298C17.1672 3.89264 16.6075 3.33301 15.9172 3.33301C15.2269 3.33301 14.6672 3.89264 14.6672 4.58298C14.6672 5.27332 15.2269 5.83295 15.9172 5.83295Z"
+                        fill="#E4D4CF" />
+                      <path
+                        d="M10.4999 5C7.73793 5 5.5 7.23818 5.5 9.99988C5.5 12.7606 7.73793 15.0002 10.4999 15.0002C13.261 15.0002 15.4998 12.7606 15.4998 9.99988C15.4998 7.23818 13.261 5 10.4999 5ZM10.4999 13.3335C8.65915 13.3335 7.16671 11.8411 7.16671 9.99988C7.16671 8.15866 8.65915 6.66671 10.4999 6.66671C12.3406 6.66671 13.833 8.15866 13.833 9.99988C13.833 11.8411 12.3406 13.3335 10.4999 13.3335Z"
+                        fill="#E4D4CF" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="ayur-footer-box">
+              <h4>Quick Links</h4>
+              <ul class="ayur-links">
+                <li><a href="javascript:void(0)">Home</a></li>
+                <li><a href="wishlist.html">About</a></li>
+                <li><a href="profile.html">Health Concerns</a></li>
+                <li><a href="javascript:void(0)">Blog</a></li>
+                <li><a href="javascript:void(0)">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="ayur-footer-box">
+              <h4>Consultation</h4>
+              <ul class="ayur-links">
+                <li><a href="javascript:void(0)">Book Now</a></li>
+                <li><a href="wishlist.html">Process</a></li>
+                <li><a href="profile.html">Doctors</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="ayur-footer-box">
+              <h4>Connect with Us</h4>
+              <ul class="ayur-contact-list">
+                <li class="ayur-contact-box">
+                  <img src="assets/images/mobile.png" alt="icon" />
+                  <p>support@atharvveda.us</p>
+                </li>
+                <li class="ayur-contact-box">
+                  <img src="assets/images/email.png" alt="icon" />
+                  <p>+1 (800) 123-4567</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="ayur-copyright-para">
+            <p>Copyright © 2025. All Right Reserved. Atharv Veda</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ayur-bgshape ayur-footer-bgshape">
+      <img src="assets/images/footer-left.png" alt="img" />
+      <img src="assets/images/footer-right.png" alt="img" />
+    </div>
+  </div>
+  <!------------- footer Section end ----------->
+  <!-- custom link  -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/SmoothScroll.min.js"></script>
+  <script src="assets/js/flatpickr.js"></script>
+  <script src="assets/js/vanilla-tilt.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Atharv Veda</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+</head>
+
+<body>
+    <!------------- Loader start ----------->
+    <div class="ayur-loader">
+        <div class="ayur-spin">
+            <img src="assets/images/loader.gif" alt="loader" />
+        </div>
+    </div>
+    <!------------- Loader End ----------->
+    <!------------- Header Section start ----------->
+    <div class="ayur-menu-wrapper">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-4 col-sm-5 col-6">
+                    <div class="ayur-menu-logo">
+                        <a href="index.html"><img src="assets/images/New-Logo.png" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-8 col-sm-7 col-6">
+                    <div class="ayur-navmenu-wrapper">
+                        <div class="ayur-nav-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li class="ayur-has-menu">
+                                    <a href="javascript:void(0)">Health Concerns
+                                        <svg version="1.1" x="0" y="0" viewBox="0 0 491.996 491.996"
+                                            style="enable-background: new 0 0 512 512">
+                                            <g>
+                                                <path
+                                                    d="m484.132 124.986-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86-7.208 0-13.964 2.792-19.036 7.86l-183.84 183.848L62.056 108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968 2.788-19.036 7.856l-16.12 16.128c-10.496 10.488-10.496 27.572 0 38.06l219.136 219.924c5.064 5.064 11.812 8.632 19.084 8.632h.084c7.212 0 13.96-3.572 19.024-8.632l218.932-219.328c5.072-5.064 7.856-12.016 7.864-19.224 0-7.212-2.792-14.068-7.864-19.128z"
+                                                    opacity="1"></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <ul class="ayur-submenu">
+                                        <li><a href="./kidney.html">Kidney</a></li>
+                                        <li><a href="./cancer.html">Cancer</a></li>
+                                        <li><a href="./leucoderma.html">Leucoderma</a></li>
+                                        <li><a href="./alzheimer.html">Alzheimer</a></li>
+                                        <li><a href="./motor-neuron-disease.html">Motor Neuron</a></li>
+                                        <li><a href="./fatty-liver.html">Fatty Liver</a></li>
+                                        <li><a href="./parkinson.html">Parkinson</a></li>
+                                        <li><a href="./psoriasis.html">Psoriasis</a></li>
+                                        <li><a href="./pcod.html">PCOD</a></li>
+                                        <li><a href="./erectile-dysfunction.html">ED</a></li>
+                                        <li><a href="./eczema.html">Eczema</a></li>
+                                        <li><a href="./jaundice.html">Jaundice</a></li>
+                                        <li><a href="./gallbladder.html">Gallbladder</a></li>
+                                        <li><a href="./diabetes.html">Diabetes</a></li>
+                                        <li><a href="./arthritis.html">Arthritis</a></li>
+                                        <li><a href="./cerebral-palsy.html">Cerebral Palsy</a></li>
+                                        <li><a href="./panchkarma.html">Panchkarma</a></li>
+                                        <li><a href="./liver-cirrhosis.html">Liver Cirrhosis</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li class="ayur-has-menu">
+                                    <a href="javascript:void(0)">Pages
+                                        <svg version="1.1" x="0" y="0" viewBox="0 0 491.996 491.996"
+                                            style="enable-background: new 0 0 512 512">
+                                            <g>
+                                                <path
+                                                    d="m484.132 124.986-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86-7.208 0-13.964 2.792-19.036 7.86l-183.84 183.848L62.056 108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968 2.788-19.036 7.856l-16.12 16.128c-10.496 10.488-10.496 27.572 0 38.06l219.136 219.924c5.064 5.064 11.812 8.632 19.084 8.632h.084c7.212 0 13.96-3.572 19.024-8.632l218.932-219.328c5.072-5.064 7.856-12.016 7.864-19.224 0-7.212-2.792-14.068-7.864-19.128z"
+                                                    opacity="1"></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <ul class="ayur-submenu">
+                                        <li><a href="blog-single.html">Blog Single</a></li>
+                                        <li><a href="shop-single.html">Shop Single</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="profile.html">Profile</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="ayur-nav-icons">
+                            <div class="ayur-nav-like">
+                                <a href="wishlist.html">
+                                    <span class="icon">
+                                        <!-- ... -->
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="ayur-nav-product">
+                                <a href="cart.html">
+                                    <span class="icon">
+                                        <!-- ... -->
+                                    </span>
+                                    <span class="ayur-nav-provalue">2</span>
+                                </a>
+                            </div>
+                            <div class="ayur-nav-user">
+                                <a href="profile.html">
+                                    <span class="icon">
+                                        <!-- ... -->
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ayur-toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Header Section End ----------->
+
+    <!------------- Breadcrumb Section start ----------->
+    <div class="ayur-bread-section">
+        <div class="ayur-breadcrumb-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="ayur-bread-content">
+                            <h2>Health Concerns</h2>
+                            <div class="ayur-bread-list">
+                                <span>
+                                    <a href="index.html">Home</a>
+                                </span>
+                                <span class=""><a href="blog.html">Health Concerns</a></span>
+                                <span class="ayur-active-page">Alzheimer-Disease</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Breadcrumb Section end ----------->
+
+    <!-- Alzheimer Disease Section Start -->
+    <div class="ayur-kidney-section" style="background:#071818; padding:60px 0 40px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Heading and Image -->
+                <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+                    <div class="text-white" style="max-width:600px;">
+                        <h1 style="font-size:3rem; font-weight:800;">Ayurvedic <span
+                                style="color:#ffb300;font-size: larger;">Alzheimer’s Disease</span><br>
+                            Treatment
+                        </h1>
+                        <div style="margin:32px 0 24px 0;">
+                            <span
+                                style="background:#ff5722; color:#fff; font-size:2.5rem; font-weight:700; padding:10px 32px; border-radius:4px; display:inline-block;">ATHARVEDA</span>
+                        </div>
+                        <div style="font-size:2rem; color:#fff; font-weight:400;">100% Ayurvedic Treatment</div>
+                        <div style="margin-top:40px;">
+                            <img src="assets/images/chronic-kidney.webp" alt="Alzheimer"
+                                style="max-width:180px; display:block;" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side: Form -->
+                <div class="col-lg-5 col-md-12">
+                    <div class="p-4 bg-white rounded shadow" style="max-width:400px; margin:auto;">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Full Name / पूरा नाम" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control"
+                                    placeholder="Enter 10 Digit Mobile No / 10 अंकों का मोबाइल नंबर" maxlength="10"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email / ईमेल" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" value="Alzheimer’s Disease" readonly
+                                    style="background:#f5f5f5; font-weight:600;">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="2"
+                                    placeholder="Describe Your Symptoms Here / यहाँ अपने लक्षणों का वर्णन करें"
+                                    required></textarea>
+                            </div>
+                            <div class="text-center mb-2">
+                                <span style="color:#00695c; font-size:1.25rem; font-weight:700;">Get Best Ayurvedic
+                                    Treatment</span>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-warning text-white"
+                                    style="font-size:1.2rem; font-weight:600; background:#ff5722; border:none;">Enquire
+                                    Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Alzheimer Disease Section End -->
+
+    <!-- What Is Alzheimer’s Disease Section Start -->
+    <div class="ayur-kidney-info-section"
+        style="background:linear-gradient(180deg, #f8f9fa 0%, #fff 100%); padding:60px 0 40px 0; border-radius:0 0 24px 24px; margin-bottom:40px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Heading, Text, Button -->
+                <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+                    <h2 style="font-size:3rem; font-weight:800; color:#00423b; margin-bottom:24px;">
+                        What Is <span style="color:#ffb300;font-size: larger;">Alzheimer’s Disease?</span>
+                    </h2>
+                    <p style="font-size:1.25rem; color:#18423b; margin-bottom:24px; max-width:800px;">
+                        Alzheimer’s disease is the most common type of dementia, a condition that slowly affects the
+                        brain’s ability to think, remember, and communicate. It begins with mild memory loss and
+                        gradually worsens, making it hard for a person to carry out daily tasks. As the disease
+                        progresses, the person may lose the ability to respond to their environment or hold a
+                        conversation.<br>
+                        Ayurvedic treatment for Alzheimer’s disease focuses on addressing the root causes and managing
+                        the symptoms naturally to improve quality of life.
+                    </p>
+                    <a href="#" class="btn"
+                        style="background:#00423b; color:#fff; font-size:1rem; font-weight:500; padding:10px 32px; border-radius:32px;">Book
+                        Consultation</a>
+                </div>
+                <!-- Right Side: Image -->
+                <div class="col-lg-5 col-md-12 text-center">
+                    <div
+                        style="background:#fff; border-radius:24px; box-shadow:0 8px 32px rgba(0,0,0,0.08); padding:16px 0 0 0; display:inline-block;">
+                        <img src="assets/images/chronic-kidney.webp" alt="Alzheimer"
+                            style="max-width:100%; border-radius:16px; box-shadow:0 4px 24px rgba(255,179,0,0.15);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- What Is Alzheimer’s Disease Section End -->
+
+    <!-- Causes of Alzheimer’s Disease Section Start -->
+    <div class="ayur-kidney-treatment-info-section"
+        style="background:linear-gradient(90deg, #f8f9fa 60%, #fffbe7 100%); padding:60px 0 40px 0; margin-bottom:40px; border-radius:24px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Image -->
+                <div class="col-lg-5 col-md-12 mb-4 mb-lg-0 text-center">
+                    <img src="assets/images/chronic-kidney.webp" alt="Alzheimer"
+                        style="max-width:340px; border-radius:16px; box-shadow:0 8px 32px rgba(0,0,0,0.10); background:#fff; padding:16px;" />
+                </div>
+                <!-- Right Side: Heading and Content -->
+                <div class="col-lg-7 col-md-12">
+                    <h2 style="font-size:2.8rem; font-weight:800; color:#00423b; margin-bottom:18px;">
+                        Causes of <span style="color:#ffb300;font-size: larger;">Alzheimer’s Disease</span>
+                    </h2>
+                    <p style="font-size:1.25rem; color:#18423b; margin-bottom:18px;">
+                        To choose the most effective Ayurvedic medicine for Alzheimer’s, understanding the underlying
+                        causes is important.<br>
+                        One of the major causes is the abnormal build-up of proteins in and around brain cells. These
+                        proteins include:
+                    </p>
+                    <ul
+                        style="font-size:1.15rem; color:#18423b; margin-bottom:18px; list-style-type:disc; list-style-position:outside; padding-left:24px;">
+                        <li><b>Amyloid:</b> Forms plaques around the brain cells</li>
+                        <li><b>Tau:</b> Causes tangles inside brain tissue</li>
+                    </ul>
+                    <p style="font-size:1.15rem; color:#18423b; margin-bottom:18px;">
+                        These abnormal deposits affect how brain cells communicate and function. Over time, there’s a
+                        reduction in important brain chemicals called neurotransmitters, especially acetylcholine, which
+                        plays a vital role in memory and learning.<br>
+                        As the disease advances, brain shrinkage occurs, starting with areas that control memory. In
+                        some less common forms of Alzheimer’s, different parts of the brain may be affected.<br>
+                        Alzheimer’s can also run in families. If several family members developed dementia at an early
+                        age, genetic counselling may be helpful. In some people, such as those with Down syndrome, the
+                        risk of developing Alzheimer’s is higher due to genetic factors that cause protein build-up.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Causes of Alzheimer’s Disease Section End -->
+
+    <!-- Signs and Symptoms Section Start -->
+    <div class="ayur-mnd-types-section"
+        style="background:linear-gradient(90deg, #fffbe7 60%, #f8f9fa 100%); padding:60px 0 40px 0; margin-bottom:40px; border-radius:24px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Content -->
+                <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+                    <h2 style="font-size:2.5rem; font-weight:800; color:#00423b; margin-bottom:18px;">
+                        Signs and Symptoms of <span style="color:#ffb300;font-size: larger;">Alzheimer’s Disease</span>
+                    </h2>
+                    <p style="font-size:1.15rem; color:#18423b; margin-bottom:18px;">
+                        When considering Alzheimer’s Ayurvedic treatment, sharing the symptoms with your practitioner
+                        helps in preparing a personalized care plan. Common symptoms include:
+                    </p>
+                    <ul
+                        style="font-size:1.15rem; color:#18423b; margin-bottom:18px; list-style-type:disc; list-style-position:inside; padding-left:0;">
+                    </ul>
+                    <li>Memory loss and poor judgment</li>
+                    <li>Repeating the same conversations or questions</li>
+                    <li>Aphasia (difficulty speaking or understanding speech)</li>
+                    <li>Confusion and mood swings</li>
+                    <li>Disturbed sleep cycle</li>
+                    <li>Hallucinations or speech loss in advanced stages</li>
+                    <li>Difficulty swallowing (dysphagia)</li>
+                    <li>Urinary incontinence</li>
+                    </ul>
+                    <p style="font-size:1.15rem; color:#18423b; margin-bottom:18px;">
+                        Ayurvedic medicine for Alzheimer’s disease is designed to target these symptoms, improve brain
+                        function, and support mental well-being.
+                    </p>
+                </div>
+                <!-- Right Side: Complications and Ayurveda Help -->
+                <div class="col-lg-5 col-md-12">
+                    <div
+                        style="background:#fff; border-radius:16px; box-shadow:0 8px 32px rgba(0,0,0,0.08); padding:28px 24px; margin-bottom:24px;">
+                        <h3 style="font-size:1.3rem; color:#ff5722; font-weight:700; margin-bottom:12px;">Complications
+                            of Alzheimer’s Disease</h3>
+                        <ul
+                            style="font-size:1.05rem; color:#18423b; margin-bottom:12px; list-style-type:disc; list-style-position:inside; padding-left:20px; list-style: disc inside !important;">
+                        </ul>
+                        <li>Inability to manage everyday tasks like cooking or handling finances</li>
+                        <li>Wandering or getting lost from home</li>
+                        <li>Personality changes that strain personal relationships</li>
+                        <li>Hallucinations and delusions in the advanced stage</li>
+                        <li>Sundowning — a condition where symptoms worsen in the late afternoon or evening, causing
+                            agitation, confusion, and restlessness</li>
+                        </ul>
+                        <p style="font-size:1.05rem; color:#18423b;">
+                            As the condition worsens, individuals with Alzheimer’s eventually need full-time care and
+                            supervision to stay safe and comfortable.
+                        </p>
+                    </div>
+                    <div
+                        style="background:#f8f9fa; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.06); padding:24px 20px;">
+                        <h3 style="font-size:1.3rem; color:#00423b; font-weight:700; margin-bottom:12px;">How Ayurveda
+                            Helps in Alzheimer’s Care</h3>
+                        <p style="font-size:1.05rem; color:#18423b; margin-bottom:10px;">
+                            Ayurveda for Alzheimer’s disease offers a holistic, natural approach to managing cognitive
+                            decline. The treatment plan may include:
+                        </p>
+                        <ul
+                            style="font-size:1.05rem; color:#18423b; margin-bottom:0; list-style-type:disc; list-style-position:outside; padding-left:24px;">
+                        </ul>
+                        <li>Herbal remedies to improve memory, sleep, and mood</li>
+                        <li>Therapies to restore brain balance and calm the nervous system</li>
+                        <li>Lifestyle changes and diet rich in satvik foods for brain health</li>
+                        <li>Detoxification therapies like Panchakarma to eliminate toxins from the body</li>
+                        </ul>
+                        <p style="font-size:1.05rem; color:#18423b; margin-top:10px;">
+                            With consistent care under an experienced Ayurvedic doctor, patients can experience better
+                            control over symptoms and a more balanced mental state.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Signs and Symptoms Section End -->
+
+    <!-- Patient Testimonials Section start -->
+    <div class="container" style="margin-bottom: 40px;">
+        <h2 style="font-size:2.8rem; font-weight:800; color:#00423b; text-align:center; margin-bottom:32px;">
+            Patient <span style="color:#ffb300;font-size: larger;">Testimonials</span> <span
+                style="color:#00695c; font-size:2rem;">( रोगियों का
+                प्रमाण-पत्र )</span>
+        </h2>
+        <!-- ... (keep testimonials carousel as is) ... -->
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+            <!-- carousel-inner and indicators unchanged -->
+            <!-- ... -->
+        </div>
+    </div>
+    <!-- Patient Testimonials Section end -->
+    <style>
+        #testimonialCarousel .carousel-inner {
+            min-height: 340px;
+        }
+
+        #testimonialCarousel .carousel-indicators [data-bs-target] {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #ffb300;
+            opacity: 0.5;
+            margin: 0 6px;
+            border: none;
+            transition: opacity 0.3s;
+        }
+
+        #testimonialCarousel .carousel-indicators .active {
+            opacity: 1;
+            background: #00423b;
+        }
+
+        .testimonial-box {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            padding: 32px;
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            height: 100%;
+        }
+
+        .testimonial-box img {
+            width: 80px;
+            border-radius: 50%;
+            background: #f5f5f5;
+            padding: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial-box h4 {
+            font-weight: 700;
+            color: #18423b;
+            margin-bottom: 8px;
+        }
+
+        .testimonial-box p {
+            font-size: 1.15rem;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+    </style>
+
+    <!-- FAQ Section start -->
+    <div class="container" style="margin-bottom: 40px;">
+        <h2 style="font-size:2.8rem; font-weight:800; color:#00423b; text-align:center; margin-bottom:32px;">
+            Frequently Asked <span style="color:#ffb300;font-size: larger;">Questions</span>
+        </h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                Can Ayurveda completely cure Alzheimer's disease?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Ayurveda focuses on holistic well-being and uses natural remedies to support overall
+                                health. While it may help manage some of the symptoms and improve the quality of life
+                                for individuals with Alzheimer's, it is not considered a definitive cure for the
+                                disease. Alzheimer's is a complex neurological condition that requires extensive medical
+                                research and interventions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                What Ayurvedic herbs and therapies are commonly used in Alzheimer's treatment?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Ayurvedic treatments for Alzheimer's often include herbs like Ashwagandha, Brahmi, and
+                                Shankhpushpi, along with therapies like Panchakarma, which is a detoxification process.
+                                These are used to support cognitive function and promote overall well-being.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Are there any risks or side effects associated with Ayurvedic Alzheimer's treatments?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                While Ayurvedic treatments are generally considered safe, it's crucial to consult with a
+                                qualified Ayurvedic practitioner before starting any treatment. Some herbs or therapies
+                                may have interactions with medications or underlying health conditions, which could
+                                potentially lead to side effects.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                How long does it take to see results from Ayurvedic Alzheimer's treatments?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The effectiveness of Ayurvedic treatments for Alzheimer's can vary from person to
+                                person. Some individuals may experience mild improvements in cognitive function and
+                                overall well-being after several months of treatment, while others may not see
+                                significant changes. Results depend on individual factors and the severity of the
+                                condition.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Should Ayurvedic treatments be used in combination with conventional Alzheimer's
+                                treatments?
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                It's essential to consult with a medical professional and discuss any complementary
+                                therapies like Ayurveda in conjunction with conventional Alzheimer's treatments.
+                                Alzheimer's disease typically requires a multidisciplinary approach, and combining
+                                various therapies may provide the most comprehensive care for the individual.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Section end -->
+    <style>
+        .accordion-button {
+            background: #00594c;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: #ffb300;
+            color: #00423b;
+        }
+
+        .accordion-item {
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .accordion-body {
+            background: #f8f9fa;
+            color: #18423b;
+            font-size: 1.15rem;
+            border-radius: 0 0 8px 8px;
+            padding: 18px 24px;
+        }
+
+        @media (max-width: 767px) {
+            .accordion-button {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+
+    <!------------- footer Section start ----------->
+    <!-- ... (footer unchanged) ... -->
+    <div class="ayur-footer-section">
+        <!-- ... -->
+    </div>
+    <!------------- footer Section end ----------->
+    <!-- custom link  -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/SmoothScroll.min.js"></script>
+    <script src="assets/js/flatpickr.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
