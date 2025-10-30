@@ -225,6 +225,102 @@
         </div>
     </div>
     <!------------- Banner Section end ----------->
+    <!-- Enquiry Form Section start -->
+    <div class="ayur-enquire-section" style="background:#071818; padding:60px 0 40px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Short Intro (keeps banner context) -->
+                <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+                    <div class="text-white" style="max-width:600px;">
+                        <h2 style="font-size:2.5rem; font-weight:800;">Start Your Journey to Better Health</h2>
+                        <p style="font-size:1.15rem; color:#d7f0ec; margin-top:12px;">Share your details and our
+                            Ayurvedic
+                            experts will get in touch to guide you towards a personalized treatment plan.</p>
+                    </div>
+                </div>
+                <!-- Right Side: Form (copied from diseases pages) -->
+                <div class="col-lg-5 col-md-12">
+                    <div class="p-4 bg-white rounded shadow" style="max-width:400px; margin:auto;">
+                        <form action="https://nocodeform.io/f/68ffa5a79ecb162aca874c37" method="POST">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Full Name / पूरा नाम" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control"
+                                    placeholder="Enter 10 Digit Mobile No / 10 अंकों का मोबाइल नंबर" maxlength="10"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email / ईमेल" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" value="General Enquiry" readonly
+                                    style="background:#f5f5f5; font-weight:600;">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="2"
+                                    placeholder="Describe Your Symptoms Here / यहाँ अपने लक्षणों का वर्णन करें"
+                                    required></textarea>
+                            </div>
+                            <div class="text-center mb-2">
+                                <span style="color:#00695c; font-size:1.25rem; font-weight:700;">Get Best Ayurvedic
+                                    Treatment</span>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-warning text-white"
+                                    style="font-size:1.2rem; font-weight:600; background:#ff5722; border:none;">Enquire
+                                    Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Enquiry Form Section end -->
+    <!-- Enquire Modal (popup form for hero) -->
+    <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enquireModalLabel">Enquire Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://nocodeform.io/f/68ffa5a79ecb162aca874c37" method="POST">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Full Name / पूरा नाम" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control"
+                                placeholder="Enter 10 Digit Mobile No / 10 अंकों का मोबाइल नंबर" maxlength="10"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email / ईमेल" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" value="General Enquiry" readonly
+                                style="background:#f5f5f5; font-weight:600;">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3"
+                                placeholder="Describe Your Symptoms Here / यहाँ अपने लक्षणों का वर्णन करें"
+                                required></textarea>
+                        </div>
+                        <div class="text-center mb-2">
+                            <span style="color:#00695c; font-size:1rem; font-weight:700;">Get Best Ayurvedic
+                                Treatment</span>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-warning text-white"
+                                style="background:#ff5722; border:none;">Enquire Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!------------- Care Section start ----------->
     <div class="ayur-care-slider-wrapper">
         <div class="ayur-banner-heading">
@@ -1415,7 +1511,8 @@
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12">
-                        <form method="" class="ayur-subscribe-sec">
+                        <form action="https://nocodeform.io/f/68ffa5a79ecb162aca874c37" method="POST"
+                            class="ayur-subscribe-sec">
                             <div class="ayur-form-input">
                                 <input type="email" class="form-control" placeholder="Enter Your Email..."
                                     name="email" />
@@ -1432,7 +1529,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="ayur-footer-logosec">
                             <div class="ayur-footer-logo">
-                                <img src="assets/images/footer-logo.svg" alt="logo" />
+                                <img src="assets/images/New-Logo.png" alt="logo" />
                             </div>
                             <p>Discover the essence of Ayurveda with Atharv Veda. Your journey to holistic health and
                                 well-being starts here.</p>
@@ -1549,6 +1646,21 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
+        // Auto-open the enquiry modal shortly after page load
+        document.addEventListener('DOMContentLoaded', function () {
+            try {
+                var enquireModalEl = document.getElementById('enquireModal');
+                if (enquireModalEl && typeof bootstrap !== 'undefined') {
+                    var enquireModal = new bootstrap.Modal(enquireModalEl);
+                    // small delay so the page renders first (adjust ms as needed)
+                    setTimeout(function () { enquireModal.show(); }, 800);
+                }
+            } catch (e) {
+                console.error('Error showing enquire modal:', e);
+            }
+        });
+    </script>
+    <script>
         const popup = document.getElementById("popup");
         const close = document.getElementById("close");
         const videoPopup1 = document.getElementById("videoPopup1");
@@ -1562,6 +1674,19 @@
             $('body').css("overflow", "auto");
         });
     </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6903360d48b579194e6ffee6/1j8q8ma5b';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 
